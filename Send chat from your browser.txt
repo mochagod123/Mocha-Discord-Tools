@@ -1,0 +1,2 @@
+javascript:'use strict';var msg=window.prompt("\u9001\u4fe1\u3057\u305f\u3044\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044",""),hook=new XMLHttpRequest;hook.open("POST","ここにWebHookURLを入れてください。");hook.setRequestHeader("Content-type","application/json");
+var content={username:"by Chrome",avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkoXnA8Cw6VGuUOUHUnERbqn9V5tvrtB-yQQ&s",content:msg};hook.send(JSON.stringify(content));
